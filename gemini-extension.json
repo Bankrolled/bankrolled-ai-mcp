@@ -1,0 +1,10 @@
+{
+  "name": "bankrolled-ai-mcp",
+  "version": "1.5.7",
+  "description": "Free, read-only MCP server with sourced personal-finance limits (deposit insurance, ISA/401k/TFSA and more) for US, UK, CA, AU and NZ. Official source and as-of date on every answer. No API key.",
+  "mcpServers": {
+    "bankrolled": {
+      "httpUrl": "https://bankrolled.ai/mcp"
+    }
+  }
+}

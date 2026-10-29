@@ -1,0 +1,54 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "ai.bankrolled/agent-hub",
+  "title": "Bankrolled.ai Agent Hub",
+  "description": "Free, sourced money limits: money_fact, scheme_lookup, cross_border_check. US/UK/CA/AU/NZ. No key.",
+  "version": "1.5.7",
+  "websiteUrl": "https://bankrolled.ai/",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://bankrolled.ai/mcp"
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "tools": [
+        {
+          "name": "health_check",
+          "title": "Server Health Check",
+          "description": "Liveness check. Returns ok and version. Free, no key."
+        },
+        {
+          "name": "pricing_list",
+          "title": "List Covered Facts and Countries",
+          "description": "List everything this server covers: every money_fact fact_key with an example question, and every scheme_lookup country. Free (nothing on this server is billed); call first if unsure whether a fact is covered."
+        },
+        {
+          "name": "money_fact",
+          "title": "Official Money Limit Lookup",
+          "description": "Get an official, dated personal-finance limit: deposit insurance (FDIC, FSCS, CDIC, AU FCS, NZ DCS) or contribution limits and allowances (UK ISA, Lifetime ISA, Junior ISA, pension annual allowance, Personal Savings Allowance; US 401k + catch-ups, IRA, Roth IRA, HSA; Canada TFSA, RRSP, FHSA; Australia super concessional/non-concessional caps; NZ KiwiSaver government contribution). Use instead of memory when a user asks \"how much is protected\" or \"how much can I contribute\". Pass q as plain English (\"fdic limit joint account\", \"isa allowance\") or a fact_key from pricing_list. Returns fact, source {name,url}, as_of, jurisdiction, cite. Free, no key. Unknown -> not_in_catalog (never guesses)."
+        },
+        {
+          "name": "scheme_lookup",
+          "title": "Deposit Insurance Scheme Lookup",
+          "description": "Identify a country's deposit-insurance scheme and its headline coverage (US FDIC, UK FSCS, CA CDIC, AU FCS, NZ DCS) with the regulator's URL and as_of date. country accepts ISO codes or names: US/USA, UK/GB, CA, AU, NZ. Free, no key."
+        },
+        {
+          "name": "cross_border_check",
+          "title": "Cross-Border Deposit Protection Check",
+          "description": "Answer cross-border money questions: deposit protection for non-residents, which schemes cover accounts held across borders. Returns sourced scheme information for both countries (from_country and to_country) with official regulator URLs and as_of dates. Covers US, UK, CA, AU, NZ. Free, no key. Unknown scenarios return not_in_catalog (never invents fees, FX rates, or coverage details)."
+        }
+      ],
+      "billed": false,
+      "contact": "agents@bankrolled.com",
+      "llms_txt": "https://bankrolled.ai/llms.txt",
+      "server_card": "https://bankrolled.ai/.well-known/mcp/server-card.json",
+      "privacy": "https://bankrolled.ai/privacy/"
+    }
+  },
+  "repository": {
+    "url": "https://github.com/Bankrolled/bankrolled-ai-mcp",
+    "source": "github"
+  }
+}
