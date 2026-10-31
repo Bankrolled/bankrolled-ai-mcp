@@ -158,6 +158,6 @@ Health check (free, never gated): `GET https://bankrolled.ai/mcp/health`
 | `docker-mcp-registry/` | Draft entry for the Docker MCP Catalog (`docker/mcp-registry`) |
 | `LICENSE` | MIT for the files in this repo; documentation under CC BY 4.0 |
 
-## Licence
+## License
 
-The files in this repository are MIT licensed. Documentation text (this README) may also be reused under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) with attribution to "Bankrolled". The licence covers this repository's contents only; it doesn't grant any rights over the Bankrolled.ai service, data sources or the bankrolled.com magazine, whose content belongs to their owners. Facts returned by the server come from official regulator and government sources, which the server names in every answer.
+Repository contents are MIT licensed; documentation at [bankrolled-ai-docs](https://github.com/Bankrolled/bankrolled-ai-docs) is CC BY 4.0.

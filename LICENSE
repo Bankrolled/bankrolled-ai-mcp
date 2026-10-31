@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 CLYFAR LTD (trading as Bankrolled)
+Copyright (c) 2026 CLYFAR LTD
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,16 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----------------------------------------------------------------------------
-Documentation
----------------------------------------------------------------------------
-
-The documentation text in this repository (README.md) is additionally
-available under the Creative Commons Attribution 4.0 International licence
-(CC BY 4.0): https://creativecommons.org/licenses/by/4.0/legalcode
-Attribution: "Bankrolled" (https://bankrolled.ai).
-
-This licence covers the contents of this repository only. It does not grant
-any rights in the Bankrolled.ai service, the bankrolled.com magazine, or the
-official regulator and government sources that the service cites.
