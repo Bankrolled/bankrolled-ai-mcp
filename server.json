@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "ai.bankrolled/agent-hub",
   "title": "Bankrolled.ai Agent Hub",
-  "description": "Free, sourced money limits: money_fact, scheme_lookup, cross_border_check. US/UK/CA/AU/NZ. No key.",
-  "version": "1.5.7",
+  "description": "Free, sourced deposit-insurance/savings/retirement limits. US, UK, CA, AU, NZ. No key, no payment.",
+  "version": "1.5.9",
   "websiteUrl": "https://bankrolled.ai/",
   "remotes": [
     {

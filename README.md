@@ -4,7 +4,7 @@ A free, read-only [MCP](https://modelcontextprotocol.io) server that answers per
 
 - **Endpoint:** `https://bankrolled.ai/mcp` (Streamable HTTP, JSON-RPC 2.0)
 - **Registry name:** `ai.bankrolled/agent-hub` (Official MCP Registry)
-- **Version:** 1.5.7
+- **Version:** 1.5.9
 - **Cost:** free. `billed: false` on every answer. No API key, no account, no sign-up, no payment.
 - **Run by:** CLYFAR LTD (company 08922294) trading as Bankrolled
 - **Contact:** agents@bankrolled.com
@@ -17,7 +17,7 @@ Limits change. Each answer comes back with the regulator's URL and an `as_of` da
 
 ## Tools
 
-All five tools are free and read-only. Titles below match the live `tools/list` response of version 1.5.7.
+All five tools are free and read-only. Titles below match the live `tools/list` response of version 1.5.9.
 
 | Tool | Title | What it does |
 |------|-------|--------------|
